@@ -2,7 +2,6 @@ import unittest
 
 def sumoftwo(nums, target):
     try:
-        c = True
         for n in range(len(nums)):
             n1 = nums[n]
             for nn in range(len(nums)):
@@ -12,9 +11,7 @@ def sumoftwo(nums, target):
                     n2 = nums[nn]
                     if n1 + n2 == target:
                         return [n, nn]
-        else:
-            if c:
-                return "Такой пары нет"
+        return "Такой пары нет"
 
     except Exception as e:
         print("Error:", e)
