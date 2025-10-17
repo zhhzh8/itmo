@@ -2,7 +2,7 @@ import unittest
 
 # По фамилии был выбран 17 вар
 
-def gen_bin_tree(height: int = 4, root: int = 17, left_branch: function = lambda x: (x - 4) ** 2, right_branch: function = lambda x: (x + 3) * 2) -> dict:
+def gen_bin_tree(height: int = 4, root: int = 17, left_branch = lambda x: (x - 4) ** 2, right_branch = lambda x: (x + 3) * 2) -> dict:
     """
     Нерекурсивно строит бинарное дерево заданной высоты с указанным корнем(Стандартно: height = 4, root = 17).
     Левый потомок(left_branch) вычисляется по заданной формуле(Стандартно: (root - 4) ** 2)
